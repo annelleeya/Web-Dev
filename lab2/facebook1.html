@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8"> 
+       <tytle></tytle>
+       <style>
+         body{
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+         }
+         .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 980px;
+            width: 100%;
+         }
+         .left-section{
+            flex: 1;
+         }
+         .left-section h1{
+            color: #1877f2;
+            font-size: 50px;
+            margin:0;
+         }
+         .left-section p{
+            font-size: 20px;
+            margin: 10px 0 0;
+
+         }
+         .right-section{
+            flex:1;
+            max-width: 400px;
+            width:100%;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+         }
+         .right-section form {
+            display: flex;
+            flex-direction: column;
+         }
+         .right-section input{
+            font-size: 16px;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+         }
+         .right-section .login-button {
+            background-color: #1877f2;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .right-section .login-button:hover {
+            background-color: #166fe5;
+        }
+
+        .right-section .forgot-password {
+            color: #1877f2;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+
+        .right-section .create-account {
+            background-color: #42b72a;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .right-section .create-account:hover {
+            background-color: #36a420;
+        }
+
+        .footer {
+            font-size: 14px;
+            color: #606770;
+            text-align: right;
+            margin-top: 20px;
+            margin-left: 550px;
+        }
+
+        .footer a {
+            color: #1f2226;
+            text-decoration: none;
+            font-weight: bold;
+        }
+       </style>
+    </head>
+    <body>
+      <div class ="container">
+         <div class ="left-section">
+            <h1>facebook</h1>
+            <p>Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми. </p>
+         </div>
+         <div class = "right-section">
+            <form>
+               <input type = "text" placeholder="Электронный адрес или номер телефона" required>
+               <input type="password" placeholder="Пароль" required>
+               <button class = "login-button" type="submit">Вход</button>
+               <a class = "forgot-password" href="https://ru-ru.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0">Забыли пароль?</a>
+               <button class="create-account" type="button">Создать аккаунт</button>
+
+            </form>
+         </div>
+      </div>
+      <div class="footer">
+         <p><a href="https://www.facebook.com/pages/create/?ref_type=registration_form">Создать страницу</a> знаменитости, музыкальной группы или компании.</p>
+      </div>
+   </body>
+   </html>
